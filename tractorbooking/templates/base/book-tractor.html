@@ -1,0 +1,61 @@
+
+{%extends 'base/main.html'%}
+{%load static%}
+{%block content%}
+    
+
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 center-container">
+            <h2 class="mb-4">Land Information Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" class="form-control" id="idNumber" placeholder="Enter your ID number">
+                </div>
+                <div class="form-group">
+                    <label for="subcounty">Subcounty</label>
+                    <select class="form-control" id="subcounty">
+                        <option value="">Select Subcounty</option>
+                        <option value="subcounty1">Subcounty 1</option>
+                        <option value="subcounty2">Subcounty 2</option>
+                        <option value="subcounty3">Subcounty 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ward">Ward</label>
+                    <select class="form-control" id="ward">
+                        <option value="">Select Ward</option>
+                        <option value="ward1">Ward 1</option>
+                        <option value="ward2">Ward 2</option>
+                        <option value="ward3">Ward 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="village">Village</label>
+                    <select class="form-control" id="village">
+                        <option value="">Select Village</option>
+                        <option value="village1">Village 1</option>
+                        <option value="village2">Village 2</option>
+                        <option value="village3">Village 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="landSize">Land Size</label>
+                    <input type="text" class="form-control" id="landSize" placeholder="Enter your land size">
+                </div>
+                <div class="form-group">
+                    <label for="landNature">Land Nature</label>
+                    <input type="text" class="form-control" id="landNature" placeholder="Enter your land nature">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{%endblock content%}

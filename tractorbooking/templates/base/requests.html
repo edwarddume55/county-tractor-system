@@ -1,0 +1,48 @@
+
+    
+ {%extends 'base/main.html'%}
+ {%load static%}
+ {%block content%}   
+
+<div class="container mt-5">
+    <h2 class="mb-4">Land Information Table</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">ID Number</th>
+                <th scope="col">Subcounty</th>
+                <th scope="col">Ward</th>
+                <th scope="col">Village</th>
+                <th scope="col">Land Size</th>
+                <th scope="col">Land Nature</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123456789</td>
+                <td>Kisauni</td>
+                <td>Shinyalu</td>
+                <td>Shikhoye</td>
+                <td>2 acres</td>
+                <td>Agricultural</td>
+                <td><b>Pending</b></td>
+            </tr>
+            <tr>
+                <td>Grace Mundu</td>
+                <td>123456789</td>
+                <td>Changamwe</td>
+                <td>Shinyalu</td>
+                <td>Shikhoye</td>
+                <td>2 acres</td>
+                <td>Agricultural</td>
+                <td>Cultivated</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+{%endblock content%}

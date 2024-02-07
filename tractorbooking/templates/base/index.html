@@ -1,0 +1,16 @@
+
+
+{%extends 'base/main.html'%}
+{%load static%}
+{%block content%}
+
+<div class="container">
+    <div class="title-container">
+        <h1>Mombasa county Department of Agriculture</h1><br>
+        <img src="{% static 'images/county logo.jpeg' %}" alt=" Logo"><br><br>
+        <button type="button" class="btn btn-success"><a href="{%url 'book'%}">Book Here</a></button>
+        <button type="button" class="btn btn-secondary"> <a href="{%url 'home'%}">View Requests</a></button>
+    </div>
+</div>
+
+{%endblock content%}
